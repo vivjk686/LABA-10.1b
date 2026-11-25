@@ -189,18 +189,15 @@ def generate_report():
     add_image_box(doc, os.path.join(IMG_DIR, "struct.png"), "Рис. 3. Структурна схема програми LABA-10.1b", width_inches=6.2)
     add_p(doc, "Опис архітектури та підпрограм:")
 
-    add_p(doc, '• Головний модуль (LABA-10.1b.cpp): організовує діалог з користувачем, динамічно виділяє масив Student* p = new Student[N], викликає функції введення, виводу та обчислення результатів, після чого звільняє пам’ять.')
-    add_p(doc, '• Заголовний файл (student_b.h): містить опис enum Specialnist та структури Student з анонімним union { int programming; int numericalMethods; int pedagogy; };.')
-    add_p(doc, '• Файл реалізації (student_b.cpp): реалізує Create() з вибором поля union через switch(spec), Print(), CountPhysicsGrades() та CountPhysicsMathHighGrades().')
+    add_p(doc, '• Головний блок main(): запитує кількість студентів N (із перевіркою N > 0), динамічно виділяє масив Student* p = new Student[N], викликає підпрограми Create(), Print(), CountPhysicsGrades(), CountPhysicsMathHighGrades(), виводить результати та звільняє пам’ять.')
+    add_p(doc, '• Create(p, N): зчитує дані студента з валідацією вводу, а третю оцінку зберігає у відповідне поле анонімного об’єднання union через switch (p[i].spec).')
+    add_p(doc, '• Print(p, N): виводить 9-колонкову таблицю (окремі колонки Prog., Chys.met, Pedagogika для третьої дисципліни).')
+    add_p(doc, '• CountPhysicsGrades(p, N, c5, c4, c3) та CountPhysicsMathHighGrades(p, N): обчислюють кількість оцінок «5», «4», «3» з фізики та кількість студентів з оцінками «4» або «5» з фізики та математики.')
 
     # --- 4. ТЕКСТ ПРОГРАМИ ---
     add_h(doc, "4. Текст програми", level=1)
 
-    add_h(doc, '4.1. Заголовний файл student_b.h', level=2)
-    add_code_block(doc, read_txt(BASE_DIR, 'LABA-10.1b\\student_b.h'))
-    add_h(doc, '4.2. Файл реалізації student_b.cpp', level=2)
-    add_code_block(doc, read_txt(BASE_DIR, 'LABA-10.1b\\student_b.cpp'))
-    add_h(doc, '4.3. Головний файл LABA-10.1b.cpp', level=2)
+    add_h(doc, '4.1. Текст програми LABA-10.1b.cpp', level=2)
     add_code_block(doc, read_txt(BASE_DIR, 'LABA-10.1b\\LABA-10.1b.cpp'))
 
     # --- 5. МОДУЛЬНЕ ТЕСТУВАННЯ ---

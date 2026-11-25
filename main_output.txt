@@ -1,0 +1,22 @@
+Vvedit kilkist studentiv (N > 0): Student # 1:
+ prizvyshche:  kurs (1-6):  spetsialnist (0 - KN, 1 - INF, 2 - ME, 3 - FI, 4 - TN):  otsinka z fizyky (2-5):  otsinka z matematyky (2-5):  otsinka z programuvannya (2-5): 
+Student # 2:
+ prizvyshche:  kurs (1-6):  spetsialnist (0 - KN, 1 - INF, 2 - ME, 3 - FI, 4 - TN):  otsinka z fizyky (2-5):  otsinka z matematyky (2-5):  otsinka z chyselnykh metodiv (2-5): 
+Student # 3:
+ prizvyshche:  kurs (1-6):  spetsialnist (0 - KN, 1 - INF, 2 - ME, 3 - FI, 4 - TN):  otsinka z fizyky (2-5):  otsinka z matematyky (2-5):  otsinka z pedagogiky (2-5): 
+Student # 4:
+ prizvyshche:  kurs (1-6):  spetsialnist (0 - KN, 1 - INF, 2 - ME, 3 - FI, 4 - TN):  otsinka z fizyky (2-5):  otsinka z matematyky (2-5):  otsinka z pedagogiky (2-5): 
+==========================================================================================
+| # |   Prizvyshche | Kurs | Spetsialnist  | Fiz. | Mat. | Prog. | Chys.met | Pedagogika |
+------------------------------------------------------------------------------------------
+| 1 | Kovalenko     |    1 | Komp. nauky   |    5 |    5 |     5 |          |            |
+| 2 | Ivanenko      |    2 | Informatyka   |    4 |    4 |       |        4 |            |
+| 3 | Petrenko      |    1 | Mat. ta ek.   |    3 |    5 |       |          |          4 |
+| 4 | Sydorenko     |    3 | Fiz. ta inf.  |    5 |    3 |       |          |          5 |
+==========================================================================================
+
+Kilkist otsinok z fizyky:
+  "5" (vidminno):   2
+  "4" (dobre):      1
+  "3" (zadovilno):  1
+Kilkist studentiv z otsinkamy "4" abo "5" z fizyky ta matematyky: 2
