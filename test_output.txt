@@ -8,4 +8,4 @@ A total of 1 test files matched the specified pattern.
 Test Run Successful.
 Total tests: 2
      Passed: 2
- Total time: 0,4775 Seconds
+ Total time: 0,4726 Seconds
